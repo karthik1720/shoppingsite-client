@@ -6,7 +6,7 @@ import "./auth.css";
 import axios from "axios";
 function Auth() {
   const navigate = useNavigate();
-  axios.defaults.baseURL = "https://shopnkp1.herokuapp.com/api";
+  // axios.defaults.baseURL = "https://shopnkp1.herokuapp.com/api";
   // const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState("");
   // const [error, setError] = useState(false);
@@ -31,17 +31,21 @@ function Auth() {
     // setLoading(true);
     e.preventDefault();
     if (type) {
-      await axios.post("/auth/register", user).then((res) => {
-        setResponse(res.data);
-        if (!res.data.error) navigate("/");
-      });
+      await axios
+        .post("https://shopnkp1.herokuapp.com/api/auth/register", user)
+        .then((res) => {
+          setResponse(res.data);
+          if (!res.data.error) navigate("/");
+        });
     } else {
-      await axios.post("/auth/login", user).then((res) => {
-        document.cookie = `access_token = ${res.data.token}`;
-        localStorage.setItem("access-token", res.data.token);
-        setResponse(res.data);
-        if (!res.data.error) navigate("/");
-      });
+      await axios
+        .post("https://shopnkp1.herokuapp.com/api/auth/login", user)
+        .then((res) => {
+          document.cookie = `access_token = ${res.data.token}`;
+          localStorage.setItem("access-token", res.data.token);
+          setResponse(res.data);
+          if (!res.data.error) navigate("/");
+        });
     }
     // setLoading(false);
   };
