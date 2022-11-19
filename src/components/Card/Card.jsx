@@ -21,7 +21,7 @@ function Card({ data }) {
   //////////RATING CALCULATOR ///////////////////////////////
   const ratingCalculator = () => {
     let index = 0;
-    if (rating % 1 != 0) {
+    if (rating % 1 !== 0) {
       stars.push(<StarHalfIcon className="CardRatingStarIcon" key={index} />);
       index = 1;
     }
@@ -36,7 +36,7 @@ function Card({ data }) {
   };
   ratingCalculator();
 
-  const title = data.title;
+  // const title = data.title;
   /////////////////////END //////////////////////////////////////////
   return (
     <div className="CardContainer">

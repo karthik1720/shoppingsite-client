@@ -1,13 +1,13 @@
-import React, { useLayoutEffect } from "react";
+import React, { useEffect } from "react";
 import "./cart.css";
 import axios from "axios";
 
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
 import Checkout from "../../components/checkout/Checkout";
 
 function Cart() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const [cartItem, setCartItem] = useState([]);
   const [showCheckout, setShowCheckout] = useState(false);
@@ -71,10 +71,9 @@ function Cart() {
     } catch (error) {}
   };
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     getData();
-    console.log("layout");
-  }, []);
+  });
 
   const reFetch = () => {
     getData();

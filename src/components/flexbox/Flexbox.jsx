@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../Card/Card";
-import Line from "../Lines/Line";
+
 import "./flexbox.css";
 import { productContext } from "../../context/productsContext";
 import { useContext } from "react";

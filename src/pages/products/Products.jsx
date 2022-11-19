@@ -1,15 +1,15 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import Flexbox from "../../components/flexbox/Flexbox";
+// import Flexbox from "../../components/flexbox/Flexbox";
 import "./products.css";
 import axios from "axios";
-import { productContext } from "../../context/productsContext";
+// import { productContext } from "../../context/productsContext";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Card from "../../components/Card/Card";
 
 /////////////////MUI /////////////////////////
-import SearchIcon from "@mui/icons-material/Search";
+// import SearchIcon from "@mui/icons-material/Search";
 
 function Products() {
   const [data, setData] = useState([]);
@@ -51,10 +51,9 @@ function Products() {
     </div>
   );
 }
-{
-  /* <productContext.Provider value={data}>
+
+/* <productContext.Provider value={data}>
           <Flexbox />
         </productContext.Provider> */
-}
 
 export default Products;

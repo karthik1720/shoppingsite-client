@@ -6,8 +6,7 @@ import Auth from "../../pages/auth/Auth";
 import { useNavigate } from "react-router-dom";
 // Material icons===============
 import PersonIcon from "@mui/icons-material/Person";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import SearchIcon from "@mui/icons-material/Search";
+
 import LocalMallOutlinedIcon from "@mui/icons-material/LocalMallOutlined";
 import MoreVertOutlinedIcon from "@mui/icons-material/MoreVertOutlined";
 //END=========================================

@@ -1,6 +1,6 @@
 import React from "react";
 import "./button1.css";
-import { useState } from "react";
+
 function Button1({ stock, button, setButton }) {
   // const [data, setData] = useState(0);
   const handleClick = (e) => {

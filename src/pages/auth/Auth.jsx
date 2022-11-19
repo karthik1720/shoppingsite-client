@@ -7,9 +7,9 @@ import axios from "axios";
 function Auth() {
   const navigate = useNavigate();
   axios.defaults.baseURL = "http://localhost:8800/api";
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState("");
-  const [error, setError] = useState(false);
+  // const [error, setError] = useState(false);
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -28,7 +28,7 @@ function Auth() {
     });
   };
   const handleSubmit = async (e) => {
-    setLoading(true);
+    // setLoading(true);
     e.preventDefault();
     if (type) {
       await axios.post("/auth/register", user).then((res) => {
@@ -43,7 +43,7 @@ function Auth() {
         if (!res.data.error) navigate("/");
       });
     }
-    setLoading(false);
+    // setLoading(false);
   };
 
   const switchMode = () => {

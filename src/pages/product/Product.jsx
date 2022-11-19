@@ -19,7 +19,7 @@ function Product() {
     setLoading(false);
   }, [productid]);
 
-  const [cartitem, setCartitem] = useState([]);
+  // const [cartitem, setCartitem] = useState([]);
 
   const addToCart = async (e) => {
     const payload = {
