@@ -6,7 +6,7 @@ import "./auth.css";
 import axios from "axios";
 function Auth() {
   const navigate = useNavigate();
-
+  axios.defaults.baseURL = "https://shopnkp1.herokuapp.com/api";
   // const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState("");
   // const [error, setError] = useState(false);
