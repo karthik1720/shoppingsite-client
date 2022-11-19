@@ -1,0 +1,148 @@
+.CartContainer {
+  min-height: 400px;
+  background-color: rgb(245, 245, 245);
+}
+
+.CartEmptyContainer {
+  min-height: 400px;
+}
+
+.CartEmptyWrapper {
+  display: flex;
+  width: 100%;
+  min-height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cart wrapper */
+
+.CartWrapper {
+  padding: 20px 50px;
+  display: flex;
+  gap: 20px;
+  /* flex-direction: column; */
+  border-radius: 3px;
+  background-color: rgb(245, 245, 245);
+}
+.CartItemsWrapper {
+  padding-left: 20%;
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* end */
+
+/* Cart item */
+
+.cartItemBox {
+  /* padding: 5px 20px 5px 20px; */
+  display: flex;
+  gap: 10px;
+
+  background-color: white;
+  /* flex-direction: column; */
+  /* border-radius: 7px; */
+  border: 1px solid rgb(215, 211, 211);
+}
+
+.CartItemImg {
+  width: 100px;
+  height: 120px;
+}
+.CartItemDetails {
+  position: relative;
+}
+.CartItemName {
+  font-size: 18px;
+  font-weight: 600;
+}
+.CartItemPrice {
+  font: 16px;
+  font-weight: 700;
+}
+.CartItemRemove {
+  position: absolute;
+  height: 35px;
+  /* width: 100%; */
+  border-top: 1px solid rgb(215, 211, 211);
+  bottom: 0;
+}
+
+.CartItemRemoveButton {
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+/* end */
+
+/* Cart checkout */
+.CartCheckoutWrapper {
+  flex: 5;
+  background-color: white;
+  padding: 20px;
+  height: fit-content;
+}
+.CartCheckoutItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CartCheckoutItem > input {
+  width: 50px;
+}
+
+.ProceedToPay {
+  height: 30px;
+  background-color: #81b622;
+  color: white;
+  border-color: #81b622;
+}
+
+.CheckoutBlocker {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(11, 10, 10, 0.5);
+}
+.CheckoutLoaderWindow {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+.CheckoutLoader {
+  /* position: fixed; */
+  /* width: 100vw;
+  height: 100vh; */
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  /* top: 0;
+  left: 0; */
+  padding: 0;
+
+  /* left: 40vw; */
+}
+/* MOBILE VIEW */
+
+@media (max-width: 500px) {
+  .CartWrapper {
+    flex-direction: column;
+  }
+  .CartItemsWrapper {
+    padding: 0;
+  }
+} ;

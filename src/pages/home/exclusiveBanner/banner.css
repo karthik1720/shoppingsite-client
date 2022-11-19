@@ -1,0 +1,19 @@
+.BannerContainer {
+  /* height: 600px; */
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.BannerItems {
+  /* height: 100%; */
+  width: 40%;
+  object-fit: contain;
+}
+.Item1 {
+  background-color: rgb(50, 71, 57);
+}
+
+.Item2 {
+  background-color: rebeccapurple;
+}

@@ -1,0 +1,60 @@
+.SidebarContainer {
+  /* max-height: 100% !important; */
+  width: 280px !important;
+  min-width: 280px !important;
+
+  border-right: 2px solid rgb(237, 237, 237);
+}
+
+.SidebarSections {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid rgb(237, 237, 237);
+  padding: 20px 40px;
+  gap: 20px;
+}
+.SidebarHeading {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+.SidebarLabels {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+.SidebarCheckboxItems {
+  display: flex;
+  gap: 10px;
+}
+
+/* Section Price */
+
+.SidebarPriceRange {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.SidebarPriceRangeInput {
+  width: 80px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgb(223, 217, 217);
+}
+
+.SidebarPriceRangeButton {
+  height: 37px;
+  border-radius: 10px;
+  background-color: #81b622;
+  color: white;
+
+  border: none;
+}
+
+@media (max-width: 500px) {
+  .SidebarContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+.FooterBottom {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgrey;
+}
+.FooterTop {
+  height: 300px;
+  padding: 20px 20px;
+  background-color: bisque;
+}
+
+.FooterTop > div > p {
+  margin: 0;
+  padding: 0;
+}

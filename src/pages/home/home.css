@@ -1,0 +1,29 @@
+.HomeWrapper {
+  display: flex;
+  position: relative;
+  top: 0;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 25px 10px 25px;
+}
+
+.Title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Hr {
+  width: 100%;
+}
+.H1Title {
+  width: min-content;
+  font-size: 1.3rem;
+
+  padding: 0px 20px;
+}
+
+.FeaturedItems {
+  gap: 30px;
+  justify-content: center;
+}

@@ -1,0 +1,10 @@
+.Button1Container {
+  display: flex;
+}
+
+.Button1TextArea {
+  width: 50px;
+  text-align: center;
+}
+.Button1Arrow {
+}

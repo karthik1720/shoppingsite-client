@@ -1,0 +1,59 @@
+.ProductWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 25px 30px 25px;
+}
+
+.Flex {
+  display: flex;
+}
+
+.ProductImgContainer {
+  flex: 1;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid grey; */
+}
+.ProductImg {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 5px;
+}
+.ProductPrc {
+  display: flex;
+  flex-direction: column;
+
+  flex: 2;
+
+  padding-left: 50px;
+}
+
+.ProductHr {
+  width: 50px;
+}
+
+.BuyButtons {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 300px;
+  row-gap: 10px;
+}
+.AddToCart {
+  display: flex;
+  gap: 20px;
+}
+.AddToCartButton {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .Flex {
+    display: block;
+  }
+  .ProductImgContainer {
+    height: 300px;
+  }
+}

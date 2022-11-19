@@ -1,0 +1,55 @@
+.CardContainer {
+  width: 280px;
+  height: 400px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(237, 237, 237);
+  border-radius: 23px;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.CardImg {
+  flex: 8;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.CardDet {
+  flex: 4;
+}
+
+.CardRating {
+  display: flex;
+  align-items: center;
+}
+
+.CardRatingStarIcon {
+  color: rgb(247, 197, 77);
+}
+
+.CardRatingStarIconWhite {
+  color: rgb(247, 197, 77);
+}
+
+.CardPricingSection {
+  display: flex;
+
+  align-items: center;
+}
+.CardPrice {
+  flex: 5;
+}
+.CardAddToCard {
+  flex: 7;
+}
+
+.CardAddToCartButton {
+  border: 3px solid rgb(237, 237, 237);
+  background-color: white;
+  max-height: 50px;
+  border-radius: 15px;
+  padding: 7px 20px;
+  font-weight: 500;
+}

@@ -1,0 +1,41 @@
+.ProductsContainer {
+  display: flex;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.ProductsList {
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 25px 10px 25px;
+}
+
+/* Search Products */
+
+.ProductsSearchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.ProductsSearchbar {
+  height: 40px;
+  background-color: rgb(250, 250, 250);
+  width: 700px;
+}
+
+.SearchIcon {
+  height: 40px !important;
+  width: 40px !important;
+}
+
+.ProductsSearchbarInput {
+  border: none;
+  height: 100%;
+  width: 660px;
+  background-color: transparent;
+}
+
+.CardTitle {
+  font-size: 15px;
+}
