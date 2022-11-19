@@ -72,23 +72,37 @@ function Cart() {
   };
 
   useEffect(() => {
-    getData();
-  });
-
-  const reFetch = () => {
-    getData();
-  };
-
-  async function getData() {
     const payload = {
       userid: localStorage.getItem("access-token"),
     };
 
-    await axios.post("user/cart/viewitems", payload).then((response) => {
+    axios.post("user/cart/viewitems", payload).then((response) => {
       setCartItem(response.data);
       handleAmount(response.data);
     });
-  }
+  }, []);
+
+  const reFetch = () => {
+    const payload = {
+      userid: localStorage.getItem("access-token"),
+    };
+
+    axios.post("user/cart/viewitems", payload).then((response) => {
+      setCartItem(response.data);
+      handleAmount(response.data);
+    });
+  };
+
+  // async function getData() {
+  //   const payload = {
+  //     userid: localStorage.getItem("access-token"),
+  //   };
+
+  //   await axios.post("user/cart/viewitems", payload).then((response) => {
+  //     setCartItem(response.data);
+  //     handleAmount(response.data);
+  //   });
+  // }
 
   const handleAmount = async (Data) => {
     let totalPrice = Data.reduce((sum, current, index) => {
